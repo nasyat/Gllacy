@@ -5,14 +5,14 @@
     <title>HTML Academy:  Каталог Глейси </title>
   </head>
   <body>
-    <header>
+    <header class="header">
 
       <nav class="main-navigation">
         <a class="main-header-logo">
           <img scr="img/logo.svg" alt="Логотип магазина Глейси">
         </a>
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a></li>
+          <li><a class="site-navigation-link" href="catalog.html">Каталог</a></li>
           <li><a href="delivery.html">Доставка и оплата</a></li>
           <li><a href="info.html">О компании</a></li>
         </ul>
@@ -25,31 +25,32 @@
         <div class="shopping_cart">
         </div>
 
-        <p class="time_work">С 10 до 20, ежедневно</p>
-        <p class="phone">8 812 450-25-25</p>
+        <div class="time_work_phone">
+          <p class="time_work">С 10 до 20, ежедневно</p>
+          <p class="phone">8 812 450-25-25</p>
+        </div>
       </nav>
 
-      <ul>
-          <li><a href="gllacy.html">Главная</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="сatalog-cream.html">Сливочное</a></li>
+    <main class="contanier">
+      <ul class="menu-navigation">
+          <li class="menu-navigation-item"><a class="menu-navigation-link" href="gllacy.html">Главная</a></li>
+          <li class="menu-navigation-item"><a class="menu-navigation-link" href="catalog.html">Каталог</a></li>
+          <li class="menu-navigation-item">Сливочное</li>
       </ul>
 
       <form class="sort-list">
-            <span>Сортировка:</span>
-            <input class="sort">
-            <ul class="sort-list">                            
-               <li>
-                   <p>Популярности</p>
-               </li>                            
-            </ul>
-            <p>Жирность:</p>
+            <p class="sort-title">Сортировка:</p>
+            <select class="sort">
+              <option value="по популярности">по популярности</option>
+              <option value=""></option>
+              <option value=""></option>
+            <p class="sort-title">Жирность:</p>
             <input type="checkbox"><p>0%</p>
             <input type="checkbox" checked><p>до 10%</p>
             <input type="checkbox"><p>до 30%</p>
             <input type="checkbox"><p>выше 30%</p>
 
-            <p>Наполнители:</p>
+            <p class="sort-title">Наполнители:</p>
             <input type="checkbox" checked><p>шоколадные</p>
             <input type="checkbox" checked><p>сахарные присыпки</p>
             <input type="checkbox"><p>фрукты</p>
@@ -59,145 +60,140 @@
       </form>
 
     </header>
-
-    <main class="contanier">
-      
       <section class="catalog">
         <ul class="catalog-list">
-          <li>
-            <a class="firstline-first">
+          <li class="catalog-item">
+            <a class="catalog-link">
               <img scr="img/hit1.svg">
               <p class="price">310</p>
-              <span>/кг</span>
-              <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+              <span class="kilo">/кг</span>
+              <p class="catalog-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
             </a>
           </li>
-          <li>
-            <a class="firstline-second">
+          <li class="catalog-item">
+            <a class="catalog-link">
               <img scr="img/hit2.svg">
               <p class="price">380</p>
-              <span>/кг</span>
-              <p>Сливочно-кофейное с кусочками шоколада</p>
+              <span class="kilo">/кг</span>
+              <p class="catalog-name">Сливочно-кофейное с кусочками шоколада</p>
             </a>  
           </li>
-          <li>
-            <a class="firstline-third">
+          <li class="catalog-item">
+            <a class="catalog-link">
               <img scr="img/hit3.svg">
               <p class="price">355</p>
-              <span>/кг</span>
-              <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+              <span class="kilo">/кг</span>
+              <p class="catalog-name">Сливочно-клубничное с присыпкой из белого шоколада</p>
             </a>
             </li>
-          <li>
-            <a class="firstline-fourth">
+          <li class="catalog-item">
+            <a class="catalog-link">
               <img scr="img/hit4.svg">
               <p class="price">415</p>
-              <span>/кг</span>
-              <p>Сливочное крем-брюле с карамельной подливкой</p>
+              <span class="kilo">/кг</span>
+              <p class="catalog-name">Сливочное крем-брюле с карамельной подливкой</p>
             </a>
           </li>
-          <li>
-            <a class="secondline-fourth">
+          <li class="catalog-item">
+            <a class="catalog-link">
                 <img scr="img/catalog1.svg">
                 <p class="price">415</p>
-                <span>/кг</span>
-                <p>Сливочное с брусничным джемом</p>
+                <span class="kilo">/кг</span>
+                <p class="catalog-name">Сливочное с брусничным джемом</p>
             </a>
           </li>
-          <li>
-                <a class="secondline-second">
-                    <img scr="img/catalog2.svg">
-                    <p class="price">410</p>
-                    <span>/кг</span>
-                    <p>Сливочно-черничное с цельными ягодами черники</p>
-                </a>
+          <li class="catalog-item">
+            <a class="catalog-link">
+                <img scr="img/catalog2.svg">
+                <p class="price">410</p>
+                <span class="kilo">/кг</span>
+                <p class="catalog-name">Сливочно-черничное с цельными ягодами черники</p>
+            </a>
           </li>
-          <li>
-            <a class="secondline-third">
+          <li class="catalog-item">
+            <a class="catalog-link">
                 <img scr="img/catalog3.svg">
                 <p class="price">375</p>
-                <span>/кг</span>
-                <p>Сливочно-лимонное с карамельной присыпкой</p>
+                <span class="kilo">/кг</span>
+                <p class="catalog-name">Сливочно-лимонное с карамельной присыпкой</p>
             </a>
           </li>
-          <li>
-                <a class="secondline-fourth">
-                    <img scr="img/catalog4.svg">
-                    <p class="price">320</p>
-                    <span>/кг</span>
-                    <p>Сливочное с шоколадной стружкой</p>
-                </a>
+          <li class="catalog-item">
+            <a class="catalog-link">
+                <img scr="img/catalog4.svg">
+                <p class="price">320</p>
+                <span class="kilo">/кг</span>
+                <p class="catalog-name">Сливочное с шоколадной стружкой</p>
+            </a>
           </li>
-          <li>
-                <a class="thirdline-first">
-                    <img scr="img/catalog5.svg">
-                    <p class="price">440</p>
-                    <span>/кг</span>
-                    <p>Сливочно-ванильное с кусочками шоколада</p>
-                </a>
+          <li class="catalog-item">
+            <a class="catalog-link">
+                <img scr="img/catalog5.svg">
+                <p class="price">440</p>
+                <span class="kilo">/кг</span>
+                <p class="catalog-name">Сливочно-ванильное с кусочками шоколада</p>
+            </a>
           </li>
-          <li>
-                <a class="thirdline-second">
-                    <img scr="img/catalog6.svg">
-                    <p class="price">435</p>
-                    <span>/кг</span>
-                    <p>Сливочноe с ментоловым сиропом</p>
-                </a>
+          <li class="catalog-item">
+            <a class="catalog-link">
+                <img scr="img/catalog6.svg">
+                <p class="price">435</p>
+                <span class="kilo">/кг</span>
+                <p class="catalog-name">Сливочноe с ментоловым сиропом</p>
+            </a>
           </li>
-          <li>
-                <a class="thirdline-third">
-                    <img scr="img/catalog7.svg">
-                    <p class="price">355</p>
-                    <span>/кг</span>
-                    <p>Сливочное с кусочками черного шоколада</p>
-                </a>
+          <li class="catalog-item">
+            <a class="catalog-link">
+                <img scr="img/catalog7.svg">
+                <p class="price">355</p>
+                <span class="kilo">/кг</span>
+                <p class="catalog-name">Сливочное с кусочками черного шоколада</p>
+            </a>
           </li>
-          <li>
-                <a class="thirdline-fourth">
-                    <img scr="img/catalog8.svg">
-                    <p class="price">420</p>
-                    <span>/кг</span>
-                    <p>Сливочное с мятным сиропом</p>
-                </a>
+          <li class="catalog-item">
+            <a class="catalog-link">
+                <img scr="img/catalog8.svg">
+                <p class="price">420</p>
+                <span class="kilo">/кг</span>
+                <p class="catalog-name">Сливочное с мятным сиропом</p>
+            </a>
           </li>
         </ul>
       </section>
 
       <div class="paginator">
             <a class="prev" href="#prev">Назад</a>
-            <a href="#1">1</a>
-            <a href="#2">2</a>
-            <a href="#3">3</a>
-            <a href="#4">4</a>
-            <a href="#5">5</a>
+            <a class="paginator-number" href="#1">1</a>
+            <a class="paginator-number" href="#2">2</a>
+            <a class="paginator-number" href="#3">3</a>
+            <a class="paginator-number" href="#4">4</a>
+            <a class="paginator-number" href="#5">5</a>
             <a class="next" href="#next">Вперёд</a>
       </div>
 
     </main>
 
-    <footer>
+    <footer class="footer">
 
         <ul class="share">
-            <li><a class="social social-tw" href="https://twitter.com/gllacy">Twitter</a></li>
-            <li><a class="social social-inst" href="https://instagram.com/gllacy">Instagram</a></li>
-            <li><a class="social social-fb" href="https://www.facebook.com/gllacy">Facebook</a></li>
-            <li><a class="social social-vk" href="https://vk.com/gllacy">VK</a></li>
+            <li class="share-item"><a class="social social-twitter" href="https://twitter.com/gllacy">Twitter</a></li>
+            <li class="share-item"><a class="social social-instagram" href="https://instagram.com/gllacy">Instagram</a></li>
+            <li class="share-item"><a class="social social-fb" href="https://www.facebook.com/gllacy">Facebook</a></li>
+            <li class="share-item"><a class="social social-vk" href="https://vk.com/gllacy">VK</a></li>
         </ul>
 
         <ul class="footer-menu">
-          <li>Для поставщиков</li>
-          <li>О производстве</li>
-          <li>Наши документы</li>
-          <li>Экологические стандарты</li>
+          <li class="footer-menu-item">Для поставщиков</li>
+          <li class="footer-menu-item">О производстве</li>
+          <li class="footer-menu-item">Наши документы</li>
+          <li class="footer-menu-item">Экологические стандарты</li>
         </ul>
 
         <div class="footer-copyright">
-          <span>Сделано в</span>
-          <a class="copyright" href="https://htmlacademy.ru"></a>
-          <span>2019</span>
+         <p class="footer-made_in">Сделано в<a class="copyright" href="https://htmlacademy.ru"></a>
+          2019 &copy; </p>
         </div>
 
     </footer>
-
   </body>
 </html>
